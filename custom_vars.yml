@@ -1,7 +1,0 @@
-# Variables for the ansible-rhsm role
-rhsm_activation_key: empsku_ak
-rhsm_org_id: 11260385
-rhsm_pool: 8a85f98b60fe87e20160ff2c176d068f
-# Define category of repos you want to enable.  Valid values include:
-# ocp, satellite, cfme
-product: rhel
