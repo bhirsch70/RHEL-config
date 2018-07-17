@@ -1,0 +1,8 @@
+---
+- name: Configure fresh RHEL instances
+  hosts: all
+  become: true
+
+  roles:
+    - ansible-rhsm
+    - redhataccess.redhat-access-insights-client
