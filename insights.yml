@@ -1,0 +1,7 @@
+---
+- name: Install Insights
+  hosts: all
+  become: true
+
+  roles:
+    - redhataccess.redhat-access-insights-client
