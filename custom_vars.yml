@@ -1,0 +1,41 @@
+# Options for the ansible-prvsn-libvirt-vm role
+# Define VM builds and options
+guest:
+  - name: rhi-client1.bhirsch.io
+    username: bhirsch
+    cpu: 1
+    mem: 512
+    iso: /home/isos/rhel-server-7.5-x86_64-dvd.iso
+    os:
+      type: Linux
+      variant: rhel7
+    disk:
+      size: 9
+  - name: rhi-client2.bhirsch.io
+    username: bhirsch
+    cpu: 1
+    mem: 512
+    iso: /home/isos/rhel-server-7.4-x86_64-dvd.iso
+    os:
+      type: Linux
+      variant: rhel7
+    disk:
+      size: 9
+  - name: rhi-client3.bhirsch.io
+    username: bhirsch
+    cpu: 1
+    mem: 512
+    iso: /home/isos/rhel-server-7.3-x86_64-dvd.iso
+    os:
+      type: Linux
+      variant: rhel7
+    disk:
+      size: 9
+
+# Variables for the ansible-rhsm role
+rhsm_activation_key: empsku_ak
+rhsm_org_id: 11260385
+rhsm_pool: 8a85f98b60fe87e20160ff2c176d068f
+# Define category of repos you want to enable.  Valid values include:
+# ocp, satellite, cfme
+product: ocp

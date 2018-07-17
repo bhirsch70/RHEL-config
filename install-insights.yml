@@ -1,0 +1,7 @@
+---
+- name: Install Red Hat Insights client
+  hosts: newvms
+  become: true
+
+  roles:
+    - { role: redhataccess.redhat-access-insights-client, when: ansible_os_family == 'RedHat' }
