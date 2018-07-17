@@ -1,2 +1,2 @@
-# RHEL-config
-Repo for RHEL configuration roles
+# ansible-RHEL-config
+Repo for RHEL configuration playbooks and roles

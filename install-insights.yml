@@ -1,6 +1,6 @@
 ---
 - name: Install Red Hat Insights client
-  hosts: newvms
+  hosts: all
   become: true
 
   roles:
