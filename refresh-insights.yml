@@ -1,6 +1,6 @@
 ---
 - name: Refresh the insights scan data
-  hosts: all
+  hosts: newvms
   become: true
 
   tasks:
