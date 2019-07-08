@@ -1,8 +1,8 @@
 ---
 - name: Refresh the insights scan data
-  hosts: newvms
+  hosts: all
   become: true
 
   tasks:
     - name: Run the insights client
-      command: redhat-access-insights
+      command: insights-client
